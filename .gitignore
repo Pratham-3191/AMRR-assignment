@@ -1,0 +1,49 @@
+# ------------------
+# Global ignores
+# ------------------
+node_modules/
+.env
+.DS_Store
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Ignore IDE/editor config files
+.vscode/
+.idea/
+*.swp
+
+# ------------------
+# Client-side (React, Vite, etc.)
+# ------------------
+client/node_modules/
+client/dist/
+client/.env.local
+client/.env.production
+client/.env.development
+client/build/
+
+# Optional: ignore React test coverage
+client/coverage/
+
+# ------------------
+# Server-side (Express, MongoDB, etc.)
+# ------------------
+api/node_modules/
+api/dist/
+api/.env
+api/uploads/
+api/coverage/
+
+# Logs
+api/logs/
+api/*.log
+
+# Ignore compiled files (if using TypeScript in backend)
+api/**/*.js
+api/**/*.js.map
+
+# PM2 logs or temp files
+api/pids
+api/*.pid
