@@ -1,6 +1,6 @@
 // api/index.js
 const serverless = require('serverless-http');
-const app = require('./server');
+const app = require('./server'); // server.js contains your express app
 
-module.exports = app;
 module.exports.handler = serverless(app);
+
